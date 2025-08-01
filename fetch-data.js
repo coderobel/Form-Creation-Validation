@@ -5,5 +5,7 @@ async function fetchUserData() {
         const response = await fetch(apiUrl);
         const users = await response.json();
         dataContainer.innerHTML = '';
+    }catch(error){
+        console.log('Error:', error);
     }
 };
